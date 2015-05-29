@@ -8,14 +8,18 @@ Devem ser baixados:
 
 Deve ser ajustado:
   - Arquivo local.properties do projeto Android.
-    - Adicionar a linha apontando para o local do NDK descompactado:  Ex.: ndk.dir=C\:\\android-ndk-r10e 
+    - Adicionar a linha apontando para o local do NDK descompactado:  
+        - Ex.: ndk.dir=C\:\\android-ndk-r10e 
   - Arquivo Android.mk na pasta jni do projeto Android.
-    - Ajustar o local do SDK do OpenCV: Ex.:  OPENCV_CAMERA_MODULES:=on
-                                              OPENCV_INSTALL_MODULES:=on
-                                              #OPENCV_LIB_TYPE:=STATIC
-                                              include D:/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
+    - Ajustar o local do SDK do OpenCV: 
+        - Ex.:  
+              - OPENCV_CAMERA_MODULES:=on
+              - OPENCV_INSTALL_MODULES:=on
+              - #OPENCV_LIB_TYPE:=STATIC
+              - include D:/OpenCV-android-sdk/sdk/native/jni/OpenCV.mk
   - Arquivo Application.mk na pasta jni do projeto Android.
-    - Colocar a versão da arquitetura utilizada: Ex.: APP_ABI := armeabi-v7a
+    - Colocar a versão da arquitetura utilizada: 
+        - Ex.: APP_ABI := armeabi-v7a
     
 
 
